@@ -1,56 +1,56 @@
 ============================================
-   CS2 Game Optimizer v1.0
-   Инструкция по использованию
+   PC Game Optimizer v1.0
+   User Guide
 ============================================
-ФАЙЛЫ:
+FILES:
 ──────
-optimizer_v2.bat   — главный скрипт (запускать первым)
-restore_v2.bat     — откат всех изменений
-README.txt         — эта инструкция
+optimizer_v2.bat   — main script (run first)
+restore_v2.bat     — reverts all changes
+README.txt         — this guide
  
-КАК ЗАПУСКАТЬ:
+HOW TO RUN:
 ──────────────
-1. Правой кнопкой на .bat файле
-2. "Запустить от имени администратора"
-3. Дождаться завершения (~1 минута)
-4. Перезагрузить ПК
+1. Right-click on the .bat file
+2. Select “Run as administrator”
+3. Wait for completion (~1 minute)
+4. Restart your PC
  
-ЧТО ДЕЛАЕТ optimizer_v2.bat:
+WHAT optimizer_v2.bat DOES:
 ─────────────────────────────
-[1] Службы Windows     — отключает ~20 ненужных фоновых служб
-                         (Xbox, поиск, телеметрия, факс и др.)
+[1] Windows Services     — disables ~20 unnecessary background services
+                         (Xbox, Search, Telemetry, Fax, etc.)
  
-[2] Визуальные эффекты — убирает анимации, прозрачность, Aero Peek
-                         освобождает ресурсы CPU/GPU
+[2] Visual Effects — removes animations, transparency, and Aero Peek
+                         frees up CPU/GPU resources
  
-[3] MSI Mode           — снижает латентность прерываний устройств
-                         особенно заметно на сети и GPU
+[3] MSI Mode           — reduces device interrupt latency
+                         particularly noticeable on the network and GPU
  
-[4] Таймеры            — отключает динамический тик, настраивает
-                         планировщик под игровые задачи
+[4] Timers            — disables dynamic tick, configures
+                         the scheduler for gaming tasks
  
-[5] План питания       — CPU всегда на 100%, никакого троттлинга,
-                         сон и гибернация отключены
+[5] Power Plan       — CPU always at 100%, no throttling,
+                         sleep and hibernation disabled
  
-[6] Сеть               — Nagle off, TCP оптимизация, быстрый DNS
-                         эффект: -5..15мс пинг
+[6] Network               — Nagle off, TCP optimization, fast DNS
+                         effect: -5..15 ms ping
  
 [7] GPU                — Hardware GPU Scheduling, VRR, Game Mode,
-                         Game DVR отключён
+                         Game DVR disabled
  
-[8] Уровень 3          — отключение Spectre/Meltdown патчей
-                         эффект: +5-10% CPU на нагруженных задачах
- 
-ОТКАТ:
+[8] Level 3          — disabling Spectre/Meltdown patches
+                         effect: +5-10% CPU on loaded tasks
+
+ROLLBACK:
 ──────
-Запусти restore_v2.bat — всё вернётся как было.
+Run restore_v2.bat — everything will return to the way it was.
  
-СОВМЕСТИМОСТЬ:
+COMPATIBILITY:
 ──────────────
-Windows 10 (1903+) и Windows 11
-Видеокарта: любая (NVIDIA / AMD / Intel)
+Windows 10 (1903+) and Windows 11
+Graphics card: any (NVIDIA / AMD / Intel)
  
-ПРИМЕЧАНИЕ:
+NOTE:
 ───────────
-Скрипт не устанавливает сторонние программы.
-Все изменения — только реестр и системные службы.
+The script does not install any third-party programs.
+All changes are limited to the registry and system services.
